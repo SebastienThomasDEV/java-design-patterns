@@ -22,4 +22,10 @@ public class ReservationFactory {
         }
         return reservation;
     }
+
+    public static Reservation bindClientToReservation(Reservation reservation, Client client) {
+        reservation.setClient(client);
+        client.getReservations().add(reservation);
+        return reservation;
+    }
 }

@@ -18,7 +18,7 @@ import fr.diginamic.tp_grasps.utils.DateFormatter;
 public class ReservationController {
 
 	/** DAO permettant d'accéder à la table des clients */
-	private ClientDao clientDao = new ClientDao();
+	private final ClientDao clientDao = new ClientDao();
 	
 	/** DAO permettant d'accéder à la table des types de réservation */
 	private final TypeReservationDao typeReservationDao = new TypeReservationDao();
